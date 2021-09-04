@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="css/main.css">
+  <link type="text/css" rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <title>Flex N' Forms</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <div id="loginContent">
+        <h1 id="loginTitle">Login</h1>
+        <form action="">
+          <div class="formField">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="formField">
+            <label for="pswd">Senha</label>
+            <input type="password" name="pswd" id="pswd">
+          </div>
+          <div class="targets">
+            <button type="submit">
+              <p> Enviar </p>
+              <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="black" />
+              </svg>
+            </button>
+            <a href="javascript:void(0)" onclick="abrirModal()">Criar Conta</a>
+          </div>
+        </form>
+        <p id="loginCredits">
+          Direitos reservadaos a Bad Luck For You. Para qualquer alteração, entrar em contato através do league of
+          legends
+        </p>
+      </div>
+      <img src="./img/resort.svg" id="loginImg" alt="Login Image">
+
+    </section>
+    <div id="modal">
+      <div id="modalContent">
+        <h1>Criar Conta</h1>
+        <form action="">
+          <div id="gridForm">
+            <div class="formField">
+              <label for="cad-email">Email</label>
+              <input type="email" name="cad-email" id="cad-email">
+            </div>
+            <div class="formField">
+              <label for="cad-email-check">Confirmar Email</label>
+              <input type="email" name="cad-email-check" id="cad-email-check">
+            </div>
+            <div class="formField">
+              <label for="cad-pswd">Senha</label>
+              <input type="password" name="cad-pswd" id="cad-pswd">
+            </div>
+            <div class="formField">
+              <label for="cad-pswd-check">Confirmar Senha</label>
+              <input type="password" name="cad-pswd-check" id="cad-pswd-check">
+            </div>
+          </div>
+          <button type="submit">
+            Cadastre-se
+          </button>
+        </form>
+        <a href="javascript:void(0)" id="closeModal" onclick="fecharModal()">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20.7084 2.08081L18.6521 0.083313L10.5 8.00248L2.34794 0.083313L0.291687 2.08081L8.44377 9.99998L0.291687 17.9191L2.34794 19.9166L10.5 11.9975L18.6521 19.9166L20.7084 17.9191L12.5563 9.99998L20.7084 2.08081Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+
+<script>
+  let modal = document.querySelector("#modal");
+  function abrirModal() {
+    modal.style.display = "flex";
+  }
+
+  function fecharModal() {
+    modal.style.display = "none";
+  }
+</script>
+
+</html>

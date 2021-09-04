@@ -1,0 +1,141 @@
+#modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(171, 171, 171, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#closeModal {
+  width: 35px;
+  height: 34px;
+  position: absolute;
+  top: -17px;
+  right: -17px;
+  background: #E12828;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalContent {
+  width: 680px;
+  height: 432px;
+  padding-left: 45px;
+  background: #C4C4C4;
+  position: relative;
+}
+
+#modalContent h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  /* identical to box height */
+  margin-bottom: 32px;
+  margin-top: 28px;
+  color: #000000;
+}
+
+#modalContent #gridForm {
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 35px;
+}
+
+#modalContent .formField label {
+  color: #000000;
+  height: 19px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+#modalContent .formField input {
+  outline: none;
+  border: none;
+  width: 251px;
+  height: 45px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#modalContent form button {
+  width: 130px;
+  height: 34px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: rgba(0, 41, 255, 0.6);
+  border-radius: 6px;
+  margin-top: 53px;
+}
+
+/* Media Queries */
+
+@media (max-width: 490px) {
+  #modalContent #gridForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px 0px;
+  }
+
+  #modalContent{
+    width: 90%;
+    height: fit-content;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #modalContent form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #modalContent .formField label {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+
+  #modalContent #gridForm {
+    gap: 32px 60px;
+  }
+
+  #modalContent{
+    height: fit-content;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #modalContent form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
