@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: 'Roboto';
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background: #DD4C39;
+  color: #FFFFFF;
+  padding: 20px 22px;
+}
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  width: 272px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  width: max-content;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+h1::after {
+  content: "";
+  margin-left: 64px;
+  width: 2px;
+  height: 70px;
+  background-color: #FFFFFF;
+}
+
+.menu {
+  padding-left: 21px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userOptions {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userOptions p {
+  padding: 25px;
+}
+
+.leftPanel {
+  height: 100%;
+  width: 272px;
+  padding: 23px;
+  display: none;
+  flex-direction: column;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.leftPanel .userId {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftPanel .userId .userImg {
+  border-radius: 40%;
+  width: 68px;
+  height: 68px;
+}
+
+.leftPanel .userId h3 {
+  margin-bottom: 10px;
+}
+
+.leftPanel .userId .status {
+  display: flex;
+  align-items: center;
+}
+
+.leftPanel .userId .status p {
+  margin-left: 10px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.73);
+}
+
+.leftPanel a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  font-size: 16px;
+  margin-top: 29px;
+}
+
+.leftPanel a .counter {
+  min-width: 18px;
+  max-width: 32px;
+  padding: 6px;
+  border-radius: 2px;
+  height: 16px;
+  background: #DD4C39;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftPanel a .title span {
+  margin-left: 10px;
+}
+
+.dashPanel {
+  height: 100%;
+  width: 100%;
+  padding: 21px;
+  background: #ECEFF5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 490px) {
+  main {
+    flex-direction: column;
+    position: relative;
+  }
+  header {
+    flex-direction: column;
+    height: fit-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+  }
+  header .title {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  h1::after {
+    width: 100%;
+    height: 2px;
+    margin: 12px 0;
+  }
+  .menu {
+    padding: 0;
+  }
+  .menu svg {
+    width: 25px;
+    height: 25px;
+  }
+  .userOptions p {
+    padding: 0 16px;
+  }
+  .leftPanel {
+    height: 100%;
+    width: 100%;
+    padding: 12px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.842);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+  }
+  .leftPanel .userId {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 0px 16px;
+  }
+  .leftPanel .userId h3 {
+    margin-bottom: 0;
+  }
+  .leftPanel .userId .status {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .leftPanel a {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .dashPanel {
+    padding: 12px;
+    height: fit-content;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  main {
+    position: relative;
+  }
+  header {
+    flex-direction: column;
+    height: fit-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  header .title {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  h1::after {
+    width: 100%;
+    height: 2px;
+    margin: 12px 0;
+  }
+  .userOptions p {
+    padding: 0 25px;
+  }
+  .menu {
+    padding: 0;
+    padding-top: 8px;
+  }
+  .menu svg {
+    width: 25px;
+    height: 25px;
+  }
+  .leftPanel {
+    background-color: rgba(255, 255, 255, 0.842);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    z-index: 10;
+  }
+  .dashPanel {
+    padding: 12px;
+    height: fit-content;
+  }
+}
