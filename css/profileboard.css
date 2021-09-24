@@ -1,0 +1,62 @@
+.slide {
+  width: 80%;
+  max-width: 848px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+.profileSlide {
+  background-color: #666666;
+  width: 100%;
+  height: 420px;
+  border-radius: 12px;
+  margin: 24px 0 32px 0;
+  padding: 32px;
+  display: flex;
+  gap: 0 19px;
+}
+
+.profileContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.profileContent .profileDesc {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.profileContent .profileNick {
+  font-weight: bold;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
+.profileImg {
+  border-radius: 12px;
+}
+
+.slideControl {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slideControl span {
+  width: 32px;
+  height: 32px;
+  background: #FFFFFF;
+  border-radius: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
