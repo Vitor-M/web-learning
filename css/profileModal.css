@@ -17,7 +17,6 @@
   display: flex;
   align-items: baseline;
   gap: 64px 124px;
-  grid-auto-flow: column;
   text-align: justify;
   color: #FFFFFF;
 }
@@ -66,7 +65,6 @@
 }
 
 #profileModal a {
-  max-width: 848px;
   font-size: 18px;
   line-height: 21px;
   color: rgba(255, 0, 0, 0.86);
