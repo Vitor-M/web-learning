@@ -151,7 +151,8 @@ h1::after {
 }
 
 .dashPanel {
-  height: 100%;
+  height: fit-content;
+  min-height: 100%;
   width: 100%;
   padding: 21px;
   background: #ECEFF5;
