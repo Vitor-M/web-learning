@@ -13,15 +13,27 @@
 }
 
 .modalContent {
-  width: 80%;
-  max-width: 848px;
-  display: grid;
-  grid-template-rows: max-content max-content;
-  align-content: space-around;
+  max-width: 906px;
+  display: flex;
+  align-items: baseline;
   gap: 64px 124px;
   grid-auto-flow: column;
   text-align: justify;
   color: #FFFFFF;
+}
+
+.modalContent>div {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.modalContent .leftContent {
+  width: 60%;
+}
+
+.modalContent .rightContent {
+  width: 40%;
 }
 
 .modalContent h3 {
@@ -29,9 +41,10 @@
   line-height: 47px;
 }
 
-.modalContent .profileLongDesc {
+.modalContent .profileLongDesc>p {
   font-size: 22px;
   line-height: 26px;
+  margin-bottom: 24px;
 }
 
 .modalContent h4 {
@@ -53,8 +66,6 @@
 }
 
 #profileModal a {
-  padding-top: 54px;
-  width: 80%;
   max-width: 848px;
   font-size: 18px;
   line-height: 21px;
