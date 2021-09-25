@@ -63,9 +63,56 @@ h2 {
 
 /* Media Queries */
 
-@media (min-width: 768px) and (max-width: 1280px) {
-  .dashPanel .cardsGrid {
+@media (max-width: 490px) {
+  body {
     height: fit-content;
-    justify-items: center;
+  }
+  .slide {
+    width: 100%;
+    max-width: unset;
+  }
+  .header {
+    text-align: center;
+  }
+  .profileSlide {
+    flex-direction: column-reverse;
+    height: fit-content;
+    gap: 32px 0;
+  }
+  .profileContent {
+    flex-direction: column-reverse;
+    gap: 12px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  body {
+    height: fit-content;
+  }
+  .slide {
+    width: 90%;
+    max-width: 712px;
+  }
+  .header {
+    padding: 12px 0;
+    text-align: center;
+  }
+  .profileSlide {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    height: auto;
+  }
+  .profileImg {
+    width: 254px;
+    height: 254px;
+  }
+  .profileContent {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 254px;
+    text-align: justify;
+  }
+  .profileContent p:nth-child(2) {
+    text-align: end;
   }
 }
